@@ -17,6 +17,8 @@ urlpatterns = patterns('',
     url(r'^messages$', 'messages.views.inbox', name='inbox'),
     url(r'^messages/(?P<pk>[\d]+)$', 'messages.views.conversation_detail', name='conversation_detail'),
 
+     url(r'^advert/(?P<pk>[\d]+)/photo-add', 'adverts.views.photo_add', name='photo_add'),
+
 #    url(r'^captcha/', include('captcha.urls')),
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
