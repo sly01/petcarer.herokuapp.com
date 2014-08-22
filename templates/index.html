@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load gravatar %}
+
+{% block content %}
+<div id="request-list">
+    {% for advert in adverts %}
+
+        <div class="request-item">
+
+            <div class="profile">
+                <a href="#">
+                    <img src="{% gravatar_url advert.user.email 100 %}" alt=""/>
+                </a>
+            </div>
+
+            <div class="summary">
+                <h4><a href="{% url "detail_advert" advert.id %}" >{{ advert.region }}'de {{ advert.pet_type.name }} bakacak biri arıyorum</a></h4>
+                <p>{{ advert.start_date|date:"j F" }} ve {{ advert.end_date|date:"j F" }} tarihleri arasında günlük {{ advert.price }} TL vereceğim.</p>
+                <a href="#">@{{ advert.user.username }}</a>
+            </div>
+
+        </div>
+    {% endfor %}
+
+        </div>
+        {% if user.is_authenticated %}
+        <div class="action-row">
+            <a href="{% url "new_advert" %}" class="large-button">Yeni İlan Gönder</a>
+        </div>
+        {% endif %}
+{% endblock %}

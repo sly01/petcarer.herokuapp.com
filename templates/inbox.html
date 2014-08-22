@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load gravatar %}
+
+{% block content %}
+<h3>Gelen Kutusu</h3>
+
+{% for conversation in conversations %}
+    <div class="conversation-item">
+        <div class="image">
+            <img src="{% gravatar_url conversation.messages.last.sender.email 100 %}" alt=""/>
+        </div>
+        <div class="conversation-message">
+            <strong>{{ conversation.messages.last.sender.username }} diyorki:</strong>
+            <p>
+                <a href="{% url "conversation_detail" conversation.id %}">{{ conversation.messages.last.text }}</a>
+            </p>
+        </div>
+    </div>
+{% empty %}
+
+    Hiç yeni mesajınız yok.
+
+{% endfor %}
+
+{% endblock %}

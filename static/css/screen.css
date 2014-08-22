@@ -1,0 +1,206 @@
+#container {
+    width: 870px;
+    margin: auto;
+}
+
+header {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+header #logo {
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    color: #4d4d4d;
+}
+
+
+.content {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.content h3 {
+    font-size: 30px;
+    color: #3d3f3e;
+    font-weight: normal;
+}
+
+.content h3 a {
+    color: #fff252;
+    text-decoration: none;
+}
+
+form select  {
+    -webkit-appearance: menulist-button;
+    /*display: none;*/
+    color: #4d4d4d;
+    font-size: 25px;
+    padding: 3px;
+}
+
+form p i {
+    font-style: normal;
+    letter-spacing: -1px;
+    color: #150f00;
+    border-bottom: 1px dotted #d8d8d8;
+}
+
+form input[type='text'] {
+    width: 170px;
+    font-size: 26px;
+}
+
+form input[type='submit'] {
+    background-color: #fff252;
+    color: #181818;
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+#request-list {
+    border-top: 3px solid #fff252;
+    border-bottom: 3px solid #fff252;
+    padding-top: 20px;
+}
+
+#request-list .request-item {
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#request-list .request-item:last-child {
+}
+
+#request-list .request-item .profile {
+    float: left;
+    width: 130px;
+}
+
+#request-list .request-item .profile img {
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+#request-list .request-item h4 {
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+}
+
+#request-list .request-item p {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 20px;
+}
+
+#request-list .request-item  a {
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#request-list .request-item h4 a {
+    font-size: 27px;
+    color: #222;
+}
+
+
+.action-row {
+    text-align: center;
+    padding: 60px 20px 100px;
+}
+
+.large-button {
+    font-size: 35px;
+    background-color: #fff252;
+    color: #353535;
+    text-decoration: none;
+    padding: 20px 30px;
+    letter-spacing: -2px;
+}
+
+.contact form {
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact h3 {
+    margin: 20px 2px;
+}
+
+.contact input[type='submit'] {
+    font-size: 24px;
+    margin-top: 74px;
+}
+
+#id_text {
+    width: 580px;
+    height: 100px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid yellow;
+    resize: none;
+}
+
+.advert-info {
+    font-size: 20px;
+    padding: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: gray;
+}
+
+.success-message {
+    background-color: #c3c9c6;
+    font-size: 30px;
+    color: #262626;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.conversation-item {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid yellow;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+.conversation-item p {
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.conversation-item .image {
+    float: left;
+    margin-right: 30px;
+}
+
+.conversation-item .image img {
+    border-radius: 50%;
+}
+
+.conversation-item .conversation-message {
+    margin-top: 10px;
+    float: left;
+}
+
+.conversation-item a {
+    color: gray;
+    text-decoration: none;
+}

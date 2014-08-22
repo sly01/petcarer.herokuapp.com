@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>Gelen Kutusu</h3>
+
+{% for message in messages %}
+<div class="conversation-item">
+    <strong>{{ message.sender.username }}:</strong>
+    <p>{{ message.text }}</p>
+</div>
+{% endfor %}
+
+<div class="contact">
+    <form action="{% url "conversation_detail" conversation.id %}" method="post">
+        {% csrf_token %}
+        <h3>Cevap gönderin</h3>
+        {{ form.text }}
+        <input type="submit" value="Gönder"/>
+    </form>
+</div>
+
+{% endblock %}
